@@ -23,7 +23,7 @@
 	<!-- Creating a header for my index.html file -->
 	<h1>ITMD-462 Web Site App Development Lab 3</h1>
 	
-	<p> id="demo" ></p>
+	<p id="demo" ></p>
 
     <!-- I am creating my HTML input form for the first name, last name, and favorite number -->
     <form action = "/ITMD-462-Lab3-form-page" method = "post" autocomplete = "on">
@@ -37,14 +37,14 @@
 	  <input type="number" id="age" name="age"/><br><br>
 	  
 	  <!-- I am creating the submit button -->
-	  <input type="submit" value="Submit">
+	  <input type="button" value="Submit" onclick="addUser()">
     </form>
 
     <!-- Connecting the JavaScript file to the HTML body -->
     <script src="script.js"></script>
 
     <!-- Creating the 'display data' button -->
-    <button onclick="sortName()">Display Data</button>
+    <input type="button" value="Display Data" onclick="displayUser()">
     
   </body>
 </html>
