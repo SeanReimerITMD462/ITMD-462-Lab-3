@@ -1,0 +1,28 @@
+/* Class to bold text */
+.bold_text {
+  font-weight: bold;
+  color : white;
+}
+
+/* CSS for body */
+body {
+  background: blue;
+  // background : url("https://wallpapercave.com/wp/wp2222211.jpg"); 
+  border: 2px solid black;
+  background-size: 700px 700px;
+  margin: 1;
+  padding: 1px;
+  text-align: center;
+}
+
+/* Class to have the primary font-family be of the external font library Roboto. Backup fonts are Times New Roman and sans-serif. */
+.test_text {
+  font-family: "Roboto", "Times New Roman", sans-serif;
+  color : yellow;
+}
+
+/* Class to bold text */
+.two {
+  font-weight: bold;
+  color : #ff0000;
+}
