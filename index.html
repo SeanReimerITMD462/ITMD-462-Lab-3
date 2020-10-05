@@ -19,40 +19,26 @@
 	<!-- Creating a header for my index.html file -->
 	<h1>ITMD-462 Web Site App Development Lab 3</h1>
 
-    <!-- I am creating my HTML input form for the first name, last name, and age -->
+    <!-- I am creating my HTML input form for the first name, last name, and favorite number -->
     <form action = "/ITMD-462-Lab3-form-page" method = "post" autocomplete = "on">
-      <ul>
-	    <li>
-	      <label for="first_name">First Name:</label>
-          <input type="text" id="first_name" name="first_name"/>
-        </li>
-	    <li>
-		  <label for="last_name">Last Name:</label>
-		  <input type="text" id = "last_name" name="last_name"/>
-	    </li>
-	    <li>
-	      <label for="age">Age:</label>
-		  <input type="number" id="age" name="age"/>
-	    </li>
+	  <label for="first_name">First Name:</label><br>
+      <input type="text" id="first_name" name="first_name"/><br>
+
+	  <label for="last_name">Last Name:</label><br>
+	  <input type="text" id = "last_name" name="last_name"/><br>
+
+	  <label for="age">Favorite Number:</label><br>
+	  <input type="number" id="age" name="age"/><br><br>
 	  
-	    <!-- I am creating the submit button -->
-	    <li class = "button">
-	     <button type = "submit">Submit</button>
-        </li>
-	  </ul>
+	  <!-- I am creating the submit button -->
+	  <button type = "submit">Submit</button>
     </form>
 
     <!-- Connecting the JavaScript file to the HTML body -->
     <script src="script.js"></script>
 
-      <!-- Creating buttons that will sort through the courses array numerically, alphabetically, and to remove the last listed course -->
-      <p><b>Choose an option below</b></p>
-
-      <button onclick="sortName()">Click Here for alphabetical order </button>
-
-      <button onclick="sortNumber()">Click Here to sort by course number </button>
-
-      <button onclick="removeCourse()">Click Here to remove the last listed course </button>
+    <!-- Creating the 'display data' button -->
+    <button onclick="sortName()">Display Data </button>
     
   </body>
 </html>
