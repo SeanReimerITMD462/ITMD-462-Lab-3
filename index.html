@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- title of the file -->
-    <title>Lab-2-ITMD-462</title>
+    <title>Lab-3-ITMD-462</title>
 
     <!-- Connecting the font library to the HTML -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -16,21 +16,36 @@
   </head>
 
   <body>
-	  <!-- Creating a header for my index.html file -->
-	  <h1>ITMD-462 Web Site App Development Lab 2</h1>
+	<!-- Creating a header for my index.html file -->
+	<h1>ITMD-462 Web Site App Development Lab 3</h1>
 
-    <!-- My paragraph describing the assignment -->
-	  <p>I will be displaying my current courses that I am attending at IIT in the Fall of 2020, starting with numeric order.  I am also adding buttons that will display the courses in alphabetical order, numerical order, and to remove the last course listed</p>
-
-    <p id="one"></p>
-
-    <p class="two" id="two"></p>
+    <!-- I am creating my HTML input form for the first name, last name, and age -->
+    <form action = "/ITMD-462-Lab3-form-page" method = "post" autocomplete = "on">
+      <ul>
+	    <li>
+	      <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" name="first_name"/>
+        </li>
+	    <li>
+		  <label for="last_name">Last Name:</label>
+		  <input type="text" id = "last_name" name="last_name"/>
+	    </li>
+	    <li>
+	      <label for="age">Age:</label>
+		  <input type="number" id="age" name="age"/>
+	    </li>
+	  
+	    <!-- I am creating the submit button -->
+	    <li class = "button">
+	     <button type = "submit">Submit</button>
+        </li>
+	  </ul>
+    </form>
 
     <!-- Connecting the JavaScript file to the HTML body -->
     <script src="script.js"></script>
 
-        <!-- Creating buttons that will sort through the courses array numerically, alphabetically, and to remove the last listed course -->
-
+      <!-- Creating buttons that will sort through the courses array numerically, alphabetically, and to remove the last listed course -->
       <p><b>Choose an option below</b></p>
 
       <button onclick="sortName()">Click Here for alphabetical order </button>
@@ -38,17 +53,6 @@
       <button onclick="sortNumber()">Click Here to sort by course number </button>
 
       <button onclick="removeCourse()">Click Here to remove the last listed course </button>
-
-    <!-- Creating the paragraphs of course information -->
-    <p> <span class = "bold_text"> ITMS-448 </span> <span class = "test_text"> Cyber Security Technologies </span> </p>
-    <p> <span class = "bold_text"> IPRO-497 </span> <span class = "test_text"> 
-      Digital Service Design 2 </span> </p>
-    <p> <span class = "bold_text"> ITMD-362 </span> <span class = "test_text"> 
-      Human-Computer Interactions </span> </p>
-    <p> <span class = "bold_text"> ITMD-469 </span> <span class = "test_text"> 
-      Web Real-Time Communications </span> </p>
-    <p> <span class = "bold_text"> ITMD-462 </span> <span class = "test_text"> 
-      Web Site App Development </span> </p>    
     
   </body>
 </html>
