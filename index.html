@@ -8,44 +8,39 @@
     <!-- title of the file -->
     <title>Lab-3-ITMD-462</title>
 
-    <!-- Connecting the font library to the HTML -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- JQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	
-	<!-- Connecting to the jQuery media link -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Connecting to JavaScript file -->
+    <script src = "jQuery.js"></script>
 
-    <!-- Connecting the External CSS file to the HTML -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-	<!-- Creating a header for my index.html file -->
-	<h1>ITMD-462 Web Site App Development Lab 3</h1>
-	
-	<!-- Connecting the JavaScript file to the HTML body -->
-    <script src="script.js"></script>
-	
-	<p id="demo" ></p>
+    <!-- Creating a header for my index.html file -->
+	  <h1>ITMD-462 Web Site App Development Lab 3</h1>
 
     <!-- I am creating my HTML input form for the first name, last name, and favorite number -->
-    <form action = "/ITMD-462-Lab3-form-page" method = "post" autocomplete = "on">
-	  <label for="first_name">First Name:</label><br>
-      <input type="text" id="first_name" name="first_name"/><br>
+    <form method = "post" autocomplete = "on">
+    <label for="first_name">First Name:
+      <input type="text" name="first_name" id="first_name" placeholder="First Name">
+    </label><br><br>
+	
+    <label for="last_name">Last Name:
+      <input type="text" name="last_name" id="last_name" placeholder="Last Name">
+    </label><br><br>
+	
+    <label for="fav_num">Favorite Number:
+      <input type="number" name="fav_num" id="fav_num" placeholder="Favorite Number">
+    </label><br><br>
+	
+	<!-- I am creating my submit and display data buttons -->
+    <button type="button" id="submit">Submit</button>
+    <button type="button" id="display_data">Display Data</button>
+  </form>
+  
+  <!-- creating id -->
+  <p></p>
 
-	  <label for="last_name">Last Name:</label><br>
-	  <input type="text" id = "last_name" name="last_name"/><br>
-
-	  <label for="age">Favorite Number:</label><br>
-	  <input type="number" id="age" name="age"/><br><br>
-	  
-	  <!-- I am creating the submit button -->
-	  <input type="button" value="Submit" onclick="addUser()">
-    </form>
-
-    <!-- Creating the 'display data' button -->
-    <input type="button" value="Display Data" onclick="displayUser()">
-    
   </body>
 </html>
